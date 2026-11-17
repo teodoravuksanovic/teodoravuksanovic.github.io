@@ -238,25 +238,6 @@ header{
     z-index: 100;
 }
 
-.usluge h1 {
-    position: relative;
-    text-align: center;
-    text-decoration: none; 
-    color: #754290; 
-    width: 100%;
-}
-
-.usluge p {
-    padding: 30px;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #614faba7;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
-}
-
 .usluge a {
     position: relative;
     text-decoration: none; 
@@ -403,17 +384,22 @@ td, th{
 }
 
 
-.naslov h1{
+.naslov {
+    width: 100%;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.naslov h1 {
     text-align: center;
     padding: 20px;
     color: #754290;
 }
 
 .naslov p {
+    width: 70%;
     padding: 30px;
-    width: 50%;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
     background-color: #614faba7;
     font-size: 18px;
     line-height: 1.6;
@@ -626,6 +612,12 @@ input[type=submit], input[type=reset]{
         margin: 20px auto;
         display: block;
     }
+    
+    .naslov p {
+        width: 90%;
+        padding: 20px;
+
+}
 }
 
 @media (max-width: 600px) {

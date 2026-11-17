@@ -227,23 +227,6 @@ header{
     border-color: #d694fa;
 }
 
-.sadrzaj h1 {
-    position: relative;
-    text-align: center;
-    text-decoration: none; 
-    color: #754290; 
-    width: 100%;
-}
-
-.sadrzaj p {
-    padding: 30px;
-    width: 50%;
-    background-color: #614faba7;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
-}
-
 .usluge{
     display: flex;
     justify-content: center;
@@ -253,6 +236,25 @@ header{
     margin: 30px auto;
     width: fit-content;
     z-index: 100;
+}
+
+.usluge h1 {
+    position: relative;
+    text-align: center;
+    text-decoration: none; 
+    color: #754290; 
+    width: 100%;
+}
+
+.usluge p {
+    padding: 30px;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #614faba7;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
 }
 
 .usluge a {
@@ -410,6 +412,8 @@ td, th{
 .naslov p {
     padding: 30px;
     width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #614faba7;
     font-size: 18px;
     line-height: 1.6;
@@ -463,6 +467,8 @@ td, th{
 #naslov_forma p {
     padding: 30px;
     width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #614faba7;
     font-size: 18px;
     line-height: 1.6;

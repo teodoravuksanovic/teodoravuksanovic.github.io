@@ -237,6 +237,19 @@ header{
     width: fit-content;
     z-index: 100;
 }
+
+.usluge h1 {
+    position: relative;
+    text-decoration: none; 
+    color: #754290; 
+}
+
+.usluge p {
+    position: relative;
+    padding: 30px;
+    width: 50%;
+    background-color: #614faba7;
+}
 .usluge a {
     position: relative;
     text-decoration: none; 
@@ -389,6 +402,13 @@ td, th{
     color: #754290;
 }
 
+.naslov p {
+    position: relative;
+    padding: 30px;
+    width: 50%;
+    background-color: #614faba7;
+}
+
 .galerija_container {
     max-width: 1200px;
     margin: 40px auto;
@@ -431,6 +451,13 @@ td, th{
     text-align: center;
     margin-top: 20px;
     color: #754290;
+}
+
+#naslov_forma p {
+    position: relative;
+    padding: 30px;
+    width: 50%;
+    background-color: #614faba7;
 }
 
 label{

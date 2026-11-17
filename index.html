@@ -1,3 +1,18 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
 <!DOCTYPE html>
 <html lang="sr">
 <head>
@@ -38,23 +53,21 @@
             <li><a href="kontakt.html" class="dugme">Kontakt</a></li>
             <li><button class="dugme" id="tamno" onclick="tamni_rezim()">Tamni režim</button></li>
           </ul>
-            <div class="fb-share-button"
-    data-href="https://teodoravuksanovic.github.io/"
-    data-layout="button_count"
-    data-size="large">
-    <a target="_blank"
-       href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fteodoravuksanovic.github.io%2F"
-       class="fb-xfbml-parse-ignore">
-       Podeli
-    </a>
-</div>
+          <div class="fb-share-button"
+          data-href="https://teodoravuksanovic.github.io/"
+          data-layout="button_count">
+          </div>
     </nav>
   </header>
 
     <div id="fb-root"></div>
-<script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/sr_RS/sdk.js#xfbml=1&version=v18.0">
-</script>
+    <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/rs_RS/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 
 <main class="sadrzaj">
 <div class="hero-image">

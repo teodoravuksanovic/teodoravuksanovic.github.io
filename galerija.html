@@ -1,10 +1,25 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
 <!DOCTYPE html>
 <html lang="sr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galerija | Deco Dream</title>
-    <meta name="keywords" content="galerija dekoracija, fotografije dekoracija, dekoracije za rodjendane, ideje za dekoraciju proslava, dekorativni aranzmani">
+    <meta name="keywords" content="galerija dekoracija, fotografije dekoracija, dekoracije za rodjendane, dekorativni aranzmani">
     <meta name="description" content="Pogledajte Deco Dream galeriju i pronađite inspiraciju kroz fotografije dekoracija i aranžmana.">
     <meta name="author" content="Teodora Vuksanović">
     <link rel="icon" type="image/x-icon" href="slike/favicon.ico">
@@ -28,7 +43,8 @@
 
 <main class="sadrzaj">
 <div class="naslov">
-<h1>Galerija</h1>
+<h1>Galerija dekoracija</h1>
+<p>Pogledajte našu galeriju dekoracija i istražite fotografije dekoracija koje će vam poslužiti kao inspiracija. Otkrijte raznovrsne dekoracije za rođendane i kreativne dekorativne aranžmane koji će svaki vaš poseban događaj učiniti jedinstvenim i nezaboravnim.</p>
 </div>
 <div class="galerija_container">
 <div class="red">
